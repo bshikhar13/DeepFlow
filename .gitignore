@@ -1,0 +1,28 @@
+# Build output
+/deepflow
+/web/node_modules/
+/web/dist/*
+!/web/dist/.gitkeep
+coverage/
+*.test
+*.out
+
+# Secrets: keys come from environment variables, never files in this repo
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local data (DeepFlow stores it in ~/.deepflow by default)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite*
+
+# Tooling and OS
+.superpowers/
+.claude/
+.vscode/
+.idea/
+.DS_Store
