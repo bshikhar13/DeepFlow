@@ -26,7 +26,7 @@ A student picks a topic and their class. DeepFlow builds a workspace of live car
 
 | Start a topic | Light theme |
 |---|---|
-| ![Home page: "What do you want to learn today?" with a topic box, class picker and topics to resume](docs/screenshots/home.png) | ![The same workspace in the light theme](docs/screenshots/workspace-light.png) |
+| ![Home page: "What do you want to learn today?" with a topic box and class picker](docs/screenshots/home.png) | ![The same workspace in the light theme](docs/screenshots/workspace-light.png) |
 
 **History and geography topics get a map.** Here, "The Mughal Empire" for class 7, with a timeline game and a quiz:
 
