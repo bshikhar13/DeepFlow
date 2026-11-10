@@ -4,7 +4,7 @@ An adaptive learning workspace for school students in classes 6 to 12.
 
 A student picks a topic and their class. DeepFlow builds a workspace of live cards around it. An AI harness watches what the student does in each card and adapts the whole workspace to match.
 
-![DeepFlow workspace for "Forces and motion": Chat, a push-the-cart game, My Journey, Quiz, Key Idea and My Notes cards](docs/screenshots/workspace.png)
+![DeepFlow workspace for "Forces and motion": Chat, a friction game, My Journey, Quiz, Key Idea and My Notes cards](docs/screenshots/workspace.png)
 
 ## What a student sees
 
@@ -28,11 +28,11 @@ A student picks a topic and their class. DeepFlow builds a workspace of live car
 |---|---|
 | ![Home page: "What do you want to learn today?" with a topic box, class picker and topics to resume](docs/screenshots/home.png) | ![The same workspace in the light theme](docs/screenshots/workspace-light.png) |
 
-| Maps for history and geography |
-|---|
-| ![Map card for "The Mughal Empire" with numbered pins for Panipat, Agra, Fatehpur Sikri and Delhi](docs/screenshots/map.png) |
+**History and geography topics get a map.** Here, "The Mughal Empire" for class 7, with a timeline game and a quiz:
 
-*Screenshots use the built-in Mock model, so the content is sample content. With a real model, every card is generated for the student's topic and class.*
+![Workspace for "The Mughal Empire": a map with pins from Kabul to Surat, a journey, a timeline game and a quiz](docs/screenshots/history.png)
+
+*All content in these screenshots was generated live by `qwen/qwen3.8-flash` through OpenRouter.*
 
 ## Quick start
 
