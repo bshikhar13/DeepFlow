@@ -83,7 +83,8 @@ func NewRuntime(cfg RuntimeConfig, b *Bus, c *ContextStore, f AgentFactory, sink
 		cfg.AgentBudget = 40
 	}
 	if cfg.TaskTimeout <= 0 {
-		cfg.TaskTimeout = 90 * time.Second
+		// Slower models can need well over 90 seconds for a game or quiz.
+		cfg.TaskTimeout = 3 * time.Minute
 	}
 	if cfg.DialogueTimeout <= 0 {
 		cfg.DialogueTimeout = 5 * time.Minute

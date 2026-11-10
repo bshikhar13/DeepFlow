@@ -105,7 +105,7 @@ An older context version alone does not drop a result, since most cells stay use
 
 ### 4.5 Resource governance
 
-A semaphore caps concurrent model calls (default 3), with dialogue given priority. Each agent has a per-session call budget (default 40, dialogue exempt). Each task has a timeout (default 90s) and a cancelable context. Provider errors that are retryable get up to 2 retries with backoff. When a budget is exhausted, the cell keeps its content and says it can't update further this session. Calls and tokens are logged per session and exposed at `GET /api/sessions/{id}/metrics`.
+A semaphore caps concurrent model calls (default 3), with dialogue given priority. Each agent has a per-session call budget (default 40, dialogue exempt). Each task has a timeout (default 3 minutes) and a cancelable context. Provider errors that are retryable get up to 2 retries with backoff. When a budget is exhausted, the cell keeps its content and says it can't update further this session. Calls and tokens are logged per session and exposed at `GET /api/sessions/{id}/metrics`.
 
 ### 4.6 Failure isolation
 

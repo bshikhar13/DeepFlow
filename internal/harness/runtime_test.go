@@ -497,3 +497,12 @@ func TestNoRouteExplainsThePrivacySetting(t *testing.T) {
 		t.Fatal(msg)
 	}
 }
+
+// Slower models such as Qwen Flash on OpenRouter can take over 90 seconds to
+// produce a game or quiz, so the default leaves them room.
+func TestDefaultTaskTimeoutAllowsSlowModels(t *testing.T) {
+	r := NewRuntime(RuntimeConfig{}, nil, nil, nil, nil)
+	if got := r.cfg.TaskTimeout; got != 3*time.Minute {
+		t.Fatalf("default task timeout = %v, want 3m", got)
+	}
+}
