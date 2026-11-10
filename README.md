@@ -4,6 +4,8 @@ An adaptive learning workspace for school students in classes 6 to 12.
 
 A student picks a topic and their class. DeepFlow builds a workspace of live cards around it. An AI harness watches what the student does in each card and adapts the whole workspace to match.
 
+![DeepFlow workspace for "Forces and motion": Chat, a push-the-cart game, My Journey, Quiz, Key Idea and My Notes cards](docs/screenshots/workspace.png)
+
 ## What a student sees
 
 | Card | What it does |
@@ -19,6 +21,18 @@ A student picks a topic and their class. DeepFlow builds a workspace of live car
 - **Maps for history and geography.** These topics get a Map card and a "find it on the map" game. The bundled Natural Earth outline has no political borders and works offline.
 - **The cards share context.** Ask for a game in Chat and the Game card changes to match.
 - **Answers stay on the server.** Quiz answers never reach the browser, and the server checks every game win itself.
+
+### Screenshots
+
+| Start a topic | Light theme |
+|---|---|
+| ![Home page: "What do you want to learn today?" with a topic box, class picker and topics to resume](docs/screenshots/home.png) | ![The same workspace in the light theme](docs/screenshots/workspace-light.png) |
+
+| Maps for history and geography |
+|---|
+| ![Map card for "The Mughal Empire" with numbered pins for Panipat, Agra, Fatehpur Sikri and Delhi](docs/screenshots/map.png) |
+
+*Screenshots use the built-in Mock model, so the content is sample content. With a real model, every card is generated for the student's topic and class.*
 
 ## Quick start
 
